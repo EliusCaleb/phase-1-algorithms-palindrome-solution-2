@@ -1,9 +1,21 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  for(let i=0; i<word.length/2; i++){
+    const j = word.length-1-i;
+    const startChar = word[i];
+    const endChar = word[j];
+    if (word[i]!==word[j]) return false;
+  }
+  return true;
 }
+isPalindrome('dad')
 
 /* 
   Add your pseudocode here
+   meaaning that the first letter compares with the last letter,second letteris the same
+   as the second to last letter e.t.c
+  iterate  from the begginning  to the middle
+  check each letter to the correponding letter from the end
+  if any letter don't much , return false
 */
 
 /*
